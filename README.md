@@ -118,8 +118,8 @@ maintenance and allows for more easy customization.
    really usable yet in a traditional sense yet.  Still, if you want minimal,
    this is minimal and the rest you could reasonably do yourself as sysadmin.
 
- - **Stage 2** - lite system.  This stage produces the Raspbian-Lite image.  It
-   installs some optimized memory functions, sets timezone and charmap
+ - **Stage 2** This stage produces the a result similar to Raspbian-Lite image.
+   It installs some optimized memory functions, sets timezone and charmap
    defaults, installs fake-hwclock and ntp, wifi and bluetooth support,
    dphys-swapfile, and other basics for managing the hardware.  It also
    creates necessary groups and gives the pi user access to sudo and the
@@ -133,19 +133,8 @@ maintenance and allows for more easy customization.
    you were looking for something between truly minimal and Raspbian-lite,
    here's where you start trimming.
 
- - **Stage 3** - desktop system.  Here's where you get the full desktop system
-   with X11 and LXDE, web browsers, git for development, Raspbian custom UI
-   enhancements, etc.  This is a base desktop system, with some development
-   tools installed.
-
- - **Stage 4** - Raspbian system meant to fit on a 4GB card.  More development
-   tools, an email client, learning tools like Scratch, specialized packages
-   like sonic-pi, system documentation, office productivity, etc.  This is the
-   stage that installs all of the things that make Raspbian friendly to new
-   users.
-
- - **Stage 5** - The official Raspbian Desktop image. Right now only adds
-   Mathematica.
+ - **Stage 3** - Docker Ready. This stage produces an image that will include
+   Docker installed from [get.docker.com](https://get.docker.com)
 
 ### Stage specification
 
